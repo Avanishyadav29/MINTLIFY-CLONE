@@ -342,4 +342,10 @@ body {
   gap: 15px;
   text-align: center;
 }
- 
+.section11{
+  background-color: #fff;
+}
+.section11 .babu{
+              background-color: #fff;
+              color: #000;
+}
