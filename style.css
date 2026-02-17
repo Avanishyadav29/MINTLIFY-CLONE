@@ -157,7 +157,7 @@ body {
   max-width: 1200px;
 }
 
-/* TRUSTED COMPANIES */
+/* TRUSTED COMPANIES logo */
 .logo{
   display: flex;
   justify-content: center;
@@ -166,11 +166,11 @@ body {
 .logo-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);   
-  gap: 0px 64px;                           
+  gap: 0px 84px;                           
   align-items: center;
   justify-items: center;
 
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 60px 20px;
 }
