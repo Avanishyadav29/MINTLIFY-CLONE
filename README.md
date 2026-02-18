@@ -1,11 +1,11 @@
-#  MINTLIFY-CLONE
+## MINTLIFY-CLONE 
 
 A clean clone of **Mintlify** — a documentation website UI template built with HTML & CSS.
 
 > This project is a frontend clone inspired by the original Mintlify design and structure.
 
 ---
-LINK OF WEBSITE : https://mintlifyavanish.netlify.app/
+## LINK OF WEBSITE : https://mintlifyavanish.netlify.app/
 ###  About
 
 This repository contains a **static clone of the Mintlify website** UI.  
@@ -34,7 +34,7 @@ You just need:
 
 ---
 
-#### Setup
+## Setup
 
 1. **Clone the repository:**
 
