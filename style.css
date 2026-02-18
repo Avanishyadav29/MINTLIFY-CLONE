@@ -16,7 +16,7 @@ body {
   inset: 0;
   background: linear-gradient(120deg, #020617, #0f172a, #020024, #020617);
   background-size: 300% 300%;
-  animation: bgMove 6s ease infinite, hideLoader 3s forwards;
+  animation: bgMove 6s ease infinite, hideLoader 2s forwards;
   display: flex;
   align-items: center;
   justify-content: center;
