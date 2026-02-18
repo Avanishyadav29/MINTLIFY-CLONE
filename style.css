@@ -10,7 +10,81 @@ body {
   background-color: #000;
   overflow-x: hidden;
 }
+/* LOADER SCREEN */
+.loader-screen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(120deg, #020617, #0f172a, #020024, #020617);
+  background-size: 300% 300%;
+  animation: bgMove 6s ease infinite, hideLoader 3s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 9999;
+}
 
+@keyframes bgMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(56,189,248,0.2);
+  border-top: 6px solid #38bdf8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite, pulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(56,189,248,0.6);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.loader-screen p {
+  opacity: 0;
+  animation: fadeText 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeText {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* After 3s, hide loader */
+@keyframes hideLoader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* MAIN CONTENT */
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
 /* PAGE BACKGROUND */
 .page {
   min-height: 100vh;
